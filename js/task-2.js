@@ -1,10 +1,10 @@
 'use strict';
 function formatMessage(message, maxLength) {
-return (message >= maxLength) ? message : message.slice(0, maxLength) + "...";
+return (message.length <= maxLength) ? message : message.slice(0, maxLength) + "...";
 }
 
 // ============Варіант 2============
-//     if (message >= maxLength) {
+//     if (message.length <= maxLength) {
 //         return message;
 //     } else {
 //         return message.slice(0, maxLength) + "...";
